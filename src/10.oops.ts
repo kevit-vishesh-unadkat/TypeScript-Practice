@@ -70,3 +70,26 @@ class Dog extends Animal {
 const dog = new Dog();
 
 dog.display();
+
+
+// Encapsulation
+
+class BankAccount1 {
+    private balance: number = 1000;
+
+    deposit(amount: number): void {
+        if (amount > 0) {
+            this.balance += amount;
+        }
+    }
+
+    getBalance(): number {
+        return this.balance;
+    }
+}
+
+const account1 = new BankAccount();
+
+account.deposit(500);
+
+console.log(account.getBalance()); // 1500
