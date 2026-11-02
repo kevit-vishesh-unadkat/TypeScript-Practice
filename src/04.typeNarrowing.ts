@@ -63,3 +63,9 @@ function serveOrder(item:ChaiOrder|string){
     }
     return `serving custom chai ${item}`
 }
+
+
+// use case of Narrow types
+
+// 1)multi user na role jyare assign kari tyare
+// 2) try catch

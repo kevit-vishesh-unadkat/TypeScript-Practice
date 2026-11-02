@@ -1,0 +1,45 @@
+// object oriented programming
+
+class Student{
+    name:string="vishesh";
+    age:number=21;
+
+    display():void{
+        console.log(this.name)
+        console.log(this.age)
+    }
+}
+
+const student=new Student()
+student.display()
+
+
+class Student1{
+    name:string;
+    age:number;
+
+    constructor (name:string,age:number){
+        this.name=name;
+        this.age=age;
+    }
+    display():void{
+        console.log(this.name,this.age);
+    }
+}
+
+const student1=new Student1("vishesh",18);
+student1.display();
+
+// Access Modifier
+
+class Car{
+    public name:string="bmw";
+}
+
+const car=new Car();
+console.log(car.name)
+
+// public is accessible from everywhere
+
+// private access modifier
+
