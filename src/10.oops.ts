@@ -43,3 +43,30 @@ console.log(car.name)
 
 // private access modifier
 
+class BankAccount{
+    private balence:number=5000;
+
+    displayBalance():void{
+        console.log(this.balence)
+    }
+}
+
+const account =new BankAccount();
+
+account.displayBalance();
+
+// Protected Access Moodifier
+
+class Animal {
+    protected name:string = "Lion"
+}
+
+class Dog extends Animal {
+    display():void{
+        console.log(this.name);
+    }
+}
+
+const dog = new Dog();
+
+dog.display();

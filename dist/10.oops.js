@@ -30,4 +30,25 @@ class Car {
 }
 const car = new Car();
 console.log(car.name);
+// public is accessible from everywhere
+// private access modifier
+class BankAccount {
+    balence = 5000;
+    displayBalance() {
+        console.log(this.balence);
+    }
+}
+const account = new BankAccount();
+account.displayBalance();
+// Protected Access Moodifier
+class Animal {
+    name = "Lion";
+}
+class Dog extends Animal {
+    display() {
+        console.log(this.name);
+    }
+}
+const dog = new Dog();
+dog.display();
 //# sourceMappingURL=10.oops.js.map
